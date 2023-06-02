@@ -7,4 +7,6 @@ Top-k Critical Features Multi-Head Attention/ Top-K Critical Features Transforme
 ![Tumor Localization](/src/pics/tumor_localization.png)
 
 
+<img src="/src/pics/tumor_localization.png" alt="tumor localization" style="height: 300px; width:300px;"/>
+
 
