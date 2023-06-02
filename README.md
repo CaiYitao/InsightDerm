@@ -4,7 +4,7 @@ Top-k Critical Features Multi-Head Attention/ Top-K Critical Features Transforme
 
 
 
-![Tumor Localization](https://github.com/CaiYitao/InsightDerm/blob/main/src/pics/tumor_localization.png){ width=60%,height:30px }
+![Tumor Localization](/src/pics/tumor_localization.png){ width=60%,height:30px }
 
 
 
