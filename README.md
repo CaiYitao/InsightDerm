@@ -11,7 +11,7 @@ Top-k Critical Features Multi-Head Attention/ Top-K Critical Features Transforme
 
 <img src="/src/pics/AttentionDist_DSMIL.png" alt="tumor localization" style="height: 500px; width:500px;"/>
 
-<img src="src/pics/attnmap_InsightDerm.png" alt="tumor localization" style="height: 500px; width:1000px;"/>
+<img src="src/pics/attnmap_InsightDerm.png" alt="tumor localization" style="height: 1000px; width:500px;"/>
 
 <img src="/src/pics/AttentionDist_Case2_TopkMultihead.png" alt="tumor localization" style="height: 500px; width:500px;"/>
 
