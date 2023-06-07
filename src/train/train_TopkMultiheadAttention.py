@@ -208,20 +208,20 @@ def main():
             'head_proj': args.head_proj,
             'head_dim': args.head_dim,
             'embed_x_dim':args.embed_x_dim,
-            "AUC_save_path": "/system/user/publicwork/yitaocai/Master_Thesis/auc/auc_plot_topk_multihead",
+            "AUC_save_path": "auc_plot_topk_multihead",
             # "projection":True,
             "classification":"mean", #"mean" ,"avgpool1d" ,"LPPool1d" ,"maxpool1d" 
-            "model_save_dir":f"/system/user/publicwork/yitaocai/Master_Thesis/model/topk_multihead_{args.num_classes}C",
+            "model_save_dir":f"topk_multihead_{args.num_classes}C",
   
             }
 
     if args.weighted_sampling:
         wandb.init(project=f"TopkCFMultiHead_{args.num_classes}C_weighted", name=f"Topk{args.topk}MultiHead_{args.num_heads}heads_seed{args.seed}_{args.split}_{args.dataset}", config=config,allow_val_change=True)
-        # save_path = os.path.join("/system/user/publicwork/yitaocai/Master_Thesis/auc/auc_file/weighted", f"auc_{args.num_classes}C_{args.split}_{args.seed}_{args.dataset}_n{args.n}_weighted.csv")
+        # save_path = os.path.join("auc/auc_file/weighted", f"auc_{args.num_classes}C_{args.split}_{args.seed}_{args.dataset}_n{args.n}_weighted.csv")
     
     else:
         wandb.init(project=f"TopkCFMultiHead_{args.num_classes}C", name=f"Topk{args.topk}MultiHead_{args.num_heads}heads_seed{args.seed}_{args.split}_{args.head_dim}",config=config,allow_val_change=True)
-        # save_path = os.path.join("/system/user/publicwork/yitaocai/Master_Thesis/auc/auc_file", f"auc_{args.num_classes}C_{args.split}_{args.seed}_{args.dataset}_n{args.n}.csv")
+        # save_path = os.path.join("/auc/auc_file", f"auc_{args.num_classes}C_{args.split}_{args.seed}_{args.dataset}_n{args.n}.csv")
 
     wandb.config.update(args, allow_val_change=True)
     config = wandb.config
