@@ -5,7 +5,7 @@ This repository is about my master's thesis.
 Top-k Critical Features Multi-Head Attention/ Top-K Critical Features Transformer in DSMIL for Dermatology.
 
 <img src="src/pics/Architecture.png" alt="OVERVIEW" style="height: 600px; width:1000px;"/>
-Histopathology whole-slide imaging (WSI) is vital in diagnosing skin cancer. To enhance the accuracy and performance of skin cancer diagnosis, we have developed three innovative architectures: Topk Critical Features Multi-Head Attention, Top-K Critical Features Transformer, and a revised DSMIL Base model with sparsity. Our objective is to compare the performance of these models with Attention-Based MIL using a histopathological dermatology WSI dataset collected from KUK.
+Histopathology whole-slide imaging (WSI) is vital in diagnosing skin cancer. To enhance the accuracy and performance of skin cancer diagnosis, we have developed three innovative architectures: Topk Critical Features Multi-Head Attention, Top-K Critical Features Transformer, and a revised DSMIL Base model with sparsity. Our objective is to compare the performance of these models with Attention-Based MIL using a histopathological dermatology WSI dataset collected from Kepler University Hospital.
 
 <img src="/src/pics/DSMIL.png" alt="DSMIL" style="height: 500px; width:500px;"/>
 During the training process, InsightDerm performed better than other models in the validation set. However, when evaluated on the test set, the Sparse DSMIL Base model achieved the best results. It was noteworthy that both InsightDerm and InsightDerm-T demonstrated less stability during training compared to the DSMIL Base model and Attention-based MIL.
@@ -26,7 +26,18 @@ By evaluating the performance of these models on the collected WSI dataset, we a
 
 
 <img src="src/pics/Test.png" alt="Test" style="height: 500px; width:500px;"/>
+# 中文版
+组织病理学全幅成像（WSI）对于诊断皮肤癌至关重要。为了提高皮肤癌诊断的准确性和性能，我们开发了三种创新架构：Topk关键特征多头注意力模型、Top-K关键特征变换器和带有稀疏性的改进DSMIL基础模型。我们的目标是比较这些模型与基于注意力的多实例学习（Attention-Based MIL）在从JKU大学医院收集的组织病理学皮肤WSI数据集上的性能。
 
+在训练过程中，InsightDerm在验证集上表现优于其他模型。然而，在测试集上评估时，稀疏DSMIL基础模型取得了最佳结果。值得注意的是，与DSMIL基础模型和基于注意力的MIL相比，InsightDerm和InsightDerm-T在训练过程中表现出的稳定性较差。
+
+我们尝试了三个预训练模型，以探索特征编码的各种视角：ConvNeXt、Vision GNN和Visual Attention Network。我们预期以组合的方式结合这些模型将产生最佳结果。然而，研究发现，仅由ConvNeXt编码的特征相对于其他组合表现出最佳性能。
+
+我们的研究利用DSMIL基础模型准确定位WSI数据集中的肿瘤。此外，我们还通过分析InsightDerm生成的注意力热图来深入了解对诊断过程有贡献的关键特征。然而，解释InsightDerm的注意力热图证明是具有挑战性的，因为其行为与预期不同。注意力分布模式与DSMIL基础模型明显不同。在DSMIL基础模型中，异常注意力分数表示潜在的肿瘤区域，而大多数分数明显低于异常值。相比之下，InsightDerm显示出平滑的注意力分数分布，异常值较少，并且分数通常具有相似的大小，即使在可视化时也很难区分。
+
+这些发现凸显了理解和解释注意力热图所涉及的复杂性，这可能是由于注意力头的叠加（Superposition)。需要进一步的研究和探索来揭示潜在机制，并制定有效的策略来理解和利用Top-K关键特征多头注意力在诊断过程中的作用。
+
+通过评估这些模型在收集的WSI数据集上的性能，我们旨在评估它们在组织病理学皮肤癌诊断领域中的有效性。这项分析将为它们在临床应用和影响方面提供宝贵的见解。
 
 
 
