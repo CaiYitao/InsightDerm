@@ -4,7 +4,7 @@ This repository is about my master's thesis.
 
 Top-k Critical Features Multi-Head Attention/ Top-K Critical Features Transformer in DSMIL for Dermatology.
 
-<img src="src/pics/Architecture.png" alt="OVERVIEW" style="height: 1000px; width:600px;"/>
+<img src="src/pics/Architecture.png" alt="OVERVIEW" style="height: 600px; width:1000px;"/>
 Histopathology whole-slide imaging (WSI) is vital in diagnosing skin cancer. To enhance the accuracy and performance of skin cancer diagnosis, we have developed three innovative architectures: Topk Critical Features Multi-Head Attention, Top-K Critical Features Transformer, and a revised DSMIL Base model with sparsity. Our objective is to compare the performance of these models with Attention-Based MIL using a histopathological dermatology WSI dataset collected from KUK.
 
 <img src="/src/pics/DSMIL.png" alt="DSMIL" style="height: 500px; width:500px;"/>
