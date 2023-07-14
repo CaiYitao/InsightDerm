@@ -26,7 +26,9 @@ By evaluating the performance of these models on the collected WSI dataset, we a
 
 
 <img src="src/pics/Test.png" alt="Test" style="height: 500px; width:500px;"/>
+
 # 中文版
+
 组织病理学全幅成像（WSI）对于诊断皮肤癌至关重要。为了提高皮肤癌诊断的准确性和性能，我们开发了三种创新架构：Topk关键特征多头注意力模型、Top-K关键特征变换器和带有稀疏性的改进DSMIL基础模型。我们的目标是比较这些模型与基于注意力的多实例学习（Attention-Based MIL）在从JKU大学医院收集的组织病理学皮肤WSI数据集上的性能。
 
 在训练过程中，InsightDerm在验证集上表现优于其他模型。然而，在测试集上评估时，稀疏DSMIL基础模型取得了最佳结果。值得注意的是，与DSMIL基础模型和基于注意力的MIL相比，InsightDerm和InsightDerm-T在训练过程中表现出的稳定性较差。
