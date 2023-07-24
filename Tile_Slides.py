@@ -15,7 +15,7 @@ from utils import tile_a_slide
 
 
 def main():
-    data= pd.read_csv('/restricteddata/skincancer_kuk/Scanned_WSI/metadata_workingfile_label.csv')
+    data= pd.read_csv('PATH TO DATA')
 
     diagnosis = data['diagnosis'].values
     labels = data['label'].values
@@ -23,10 +23,10 @@ def main():
     # serial_no = list(data['slidename'].values)
     filenames =[ fn.rstrip('.mrxs') for fn in data['filename'].values]
 
-    basepath = '/restricteddata/skincancer_kuk/tiles_20x/Tiles'
+    basepath = 'PATH TO TILES'
 
-    WSI_PATH = '/restricteddata/skincancer_kuk/WSI'
-    TILES_PATH = '/restricteddata/skincancer_kuk/tiles_20x/Tiles'
+    WSI_PATH = 'PATH TO WSI'
+    TILES_PATH = 'TILES PATH'
     all_mrxs_slides = sorted(glob.glob(os.path.join(WSI_PATH, '*'+ '.mrxs'), recursive=True))
     all_svs_slides = sorted(glob.glob(os.path.join(WSI_PATH, '*'+ '.svs'), recursive=True))
     processed_slides = sorted(glob.glob(os.path.join(TILES_PATH, "*",'*/'), recursive=True))
