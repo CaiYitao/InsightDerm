@@ -46,7 +46,7 @@ By evaluating the performance of these models on the collected WSI dataset, we a
 
 # Citation
 
-If you find this paper and repository helpful, please cite them.
+If you find this paper and repository helpful, please consider citing it.
 
 
 
